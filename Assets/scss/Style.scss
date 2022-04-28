@@ -1,0 +1,208 @@
+*{  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.fondoPagina {
+    background-image:url(./../Img/Fondo_Pagina.jpg)
+}
+
+#Logo {
+    cursor: pointer;
+}
+.GridPadreHeader {
+    display: grid;
+    background-image: linear-gradient( #c5f542 ,rgba(0, 0, 0, 0.164), #42f590 ) ;
+    grid-template-columns: 10% 6fr 1fr;
+    grid-template-rows: 50px, 50px, 50px;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+
+.GridHeaderChild {
+    
+    border: 2px solid rgba(66, 8, 8, 0.493);
+
+}
+#letraHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    list-style: none;  
+  
+}
+li, a {
+    color: rgb(255, 255, 255);
+    
+}
+.GridPadreHeader li, a:hover {
+    color: brown;
+    
+    }
+.GridPadreSection_Index {
+    display: grid;
+    grid-template-columns: 600px 600px   ;
+    grid-template-rows: 100px  50px 100px 100px ;
+    grid-template-areas:
+    '. . . . '
+    ' . . . . '
+    'Titulo gif . . '
+    'Subtitulo . . . '
+    'Texto . . . '; 
+    width: 90%;
+    max-width: 2000px;
+    margin: 10px auto;  
+}
+.GridPadreSection_Index .Titulo {
+    color: rgb(255, 255, 255);
+    grid-area: Titulo;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family:retro__letter; src: url(./../Fonts/retro__Letter.ttf) ;
+    text-decoration: underline;
+    text-align: center;
+}
+.GridPadreSection_Index .Subtitulo {
+    color: rgb(255, 255, 255);
+    grid-area: Subtitulo;
+    align-items: center ;
+
+    font-family:retro__letter; src: url(./../Fonts/retro__Letter.ttf) 
+}
+.GridPadreSection_Index .Texto {
+    color: rgb(255, 255, 255);
+   grid-area: Texto;
+   align-items: center ;
+   
+   
+   
+}
+
+.GridPadreSection_Index .listas #listas_Servicios {
+    
+    color: aliceblue;
+}
+.GridPadreSection_Index .gif {
+    grid-area: gif;
+    width: 100px;
+    padding-left: 100px;
+    
+}
+
+@font-face {
+    font-family: retro__letter;
+    src: url(./../Fonts/retro__Letter.ttf);
+}
+
+li h3 {
+    color: aliceblue;
+}   
+
+.menu__padre {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__padre h1 {
+    color: aliceblue;
+}
+.menu__padre h2 {
+    color: aliceblue;
+} 
+.menutitulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    border: 5px;
+    border-style:dotted;
+    border-color: rgba(66, 8, 8, 0.493);
+}
+.menu_general {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 100px;
+}
+
+.entradas {
+    padding: 20px;
+    border: 5px;
+    border-style:double;
+    border-color: rgba(66, 8, 8, 0.493);
+}
+.hot_dogs {
+    padding: 20px;
+    border: 5px;
+    border-style:double;
+    border-color: rgba(66, 8, 8, 0.493);
+}
+.hamburguesas {
+    padding: 20px;
+    border: 5px;
+    border-style:double;
+    border-color: rgba(66, 8, 8, 0.493);
+}
+.ensaladas {
+    padding: 20px;
+    border: 5px;
+    border-style:double;
+    border-color: rgba(66, 8, 8, 0.493);
+    margin-top: 15px;
+}
+.GridPadreSection_Index .Subtitulo h2 {
+    display: grid;
+    align-items: center;
+}
+.GridPadreSection_Index .Titulo h3 {
+    padding: 10px;
+}
+
+thead {
+    color: aliceblue;
+}
+tbody {
+    color: aliceblue;
+}
+
+.GridPadreSection_Index .lista_container {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.GridPadreSection_Index .lista_container .Subtitulo {
+    padding: 50px;
+}
+.GridPadreSection_Index .lista_container .Texto {
+    padding: 50px
+}
+
+.GridPadreSection_Index .contacto    {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 400px;
+}
+
+.GridPadreSection_Index .contacto .Formulario {
+    color: aliceblue;
+    padding: 10px;
+}
+
+@media screen {
+    .GridPadreHeader {
+        max-width: 1680px;
+
+    }
+}
+@media screen {
+    .GridPadreHeader {
+        min-width: 768px;
+        grid-template-columns: 1 /-1;
+    }
+}
