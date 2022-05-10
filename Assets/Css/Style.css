@@ -135,7 +135,7 @@ li h3 {
   display: grid;
   align-items: center; }
 
-.Titulo h3 {
+.GridPadreSection_Index .Titulo h3 {
   padding: 10px; }
 
 thead {
